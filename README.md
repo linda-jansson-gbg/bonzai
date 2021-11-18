@@ -1,4 +1,5 @@
 # bonz.ai
+School assignment
 
 ## Project setup
 
