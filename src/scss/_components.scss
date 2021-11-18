@@ -1,0 +1,83 @@
+@import 'variables';
+/* buttons */
+button {
+  appearance: none;
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  height: 2.3rem;
+  border: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: $radius;
+  background: $green;
+  color: $white;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &.invert {
+    border: 1px solid $green;
+    background: none;
+    color: $green;
+  }
+  &.white-btn {
+    background: $white;
+    color: $green;
+  }
+}
+
+/* select option */
+.book-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  button {
+    margin-top: 2rem;
+  }
+  p.label {
+    margin-bottom: 0.2rem;
+  }
+  .select {
+    border: 1px solid $middleGrey;
+    color: $darkGrey;
+    background: $white;
+    padding: 0 0.5rem;
+    width: 17rem;
+    height: 2.2rem;
+    @include vertical-center;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-right: 2rem;
+    &.option {
+      justify-content: center;
+      background: $lightGrey;
+    }
+    &.white {
+      background: $white;
+    }
+    .arrow {
+      border: solid #1b1d22;
+      border-width: 0 2px 2px 0;
+      display: inline-block;
+      padding: 5px;
+      margin-top: -4px;
+    }
+    .down {
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    @include column-center;
+    div {
+      width: 100%;
+    }
+    .select {
+      margin-right: 0;
+      width: auto;
+    }
+  }
+}
