@@ -1,6 +1,9 @@
 # bonz.ai
 School assignment
 
+Based on <a href="https://github.com/linda-jansson-gbg/bonzai-styleguide">bonz.ai style guide</a>
+and <a href="https://www.figma.com/file/JYBE9OURIYqr8HiGnirPOS/bonzai?node-id=0%3A1">Figma design</a>
+
 ## Project setup
 
 ```
